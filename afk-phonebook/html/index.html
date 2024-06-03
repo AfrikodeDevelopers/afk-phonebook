@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        #container {
+            padding: 10px;
+            position: absolute;
+            background-color: darkslategrey;
+            top: 0;
+            left: 0;
+            overflow-y: scroll;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        #phoneBookTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        #phoneBookTable th {
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+        }
+        
+        #phoneBookTable td {
+            font-size: 16px;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        #phoneBookTable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .header-row {
+  display: table-row;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container" style="display: none;">
+        <div id="phoneBook">
+          <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search...">
+          <button id="closeButton">Close</button>
+          <table id="phoneBookTable">
+            <thead>
+              <tr class="header-row">
+                <th>Citizen Name</th>
+                <th>Phone Number</th>
+                <th>Job</th>
+                <th>Title</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+      
+        </div>
+      </div>
+      
+    <script src="app.js"></script>
+</body>
+</html>

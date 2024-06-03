@@ -1,0 +1,10 @@
+Only supported on QB-Core
+
+Drag and drop the resource in your resources folder.
+
+
+
+Add this to your shared item.lua file
+["phonebook"] 					 = {["name"] = "phonebook", 			 			["label"] = "Phonebook", 			["weight"] = 500, 		["type"] = "item", 		["image"] = "phonebook.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "1960 Who dis?"},
+
+add the image in the asset folder to your inventory images folder.
