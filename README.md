@@ -1,2 +1,2 @@
 # afk-phonebook
-A phonbook script for QB-Core
+A phonebook script for QB-Core
